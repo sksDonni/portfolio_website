@@ -2,24 +2,24 @@
 
 {% block content %}
 	{% block education %}
-	<div class="education">
+	<div id="edu">
 		<h1>
 			Education
 		</h1>
 		<div class="row">
-			<div class="col">
+			<div class="col education" id="uvce-edu">
 				<img id="uvce_logo" src="{{url_for('static', filename='bu_logo.jpg')}}">
 				<h1>
 					UVCE
 				</h1>
-				<p class="edu-para m-2">
+				<p class="edu-para">
 					BTech in Information Science and Engineering,<br>
 					Dept. Of Computer Science and Engineering<br>
 					(2019-)
 				</p>
 			</div>
 
-			<div class="col">
+			<div class="col education" id="iit-edu">
 				<img src="{{url_for('static', filename='iit_madras.png')}}">
 				<h2>
 					IIT MADRAS
@@ -38,7 +38,7 @@
 			My Projects
 		</h1>
 		<div class="row">
-			<div class="col">
+			<div class="col-12 col-md-6"> 
 				<div class="card">
 					<div class="card-body">
 						<h3>
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 
-			<div class="col">
+			<div class="col-12 col-md-6">
 				<div class="card">
 					<div class="card-body">
 						<h3>
@@ -68,7 +68,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col">
+			<div class="col-12 col-md-6">
 				<div class="card">
 					<div class="card-body">
 						<h3>
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 
-			<div class="col">
+			<div class="col-12 col-md-6">
 				<div class="card">
 					<div class="card-body">
 						<h3>
