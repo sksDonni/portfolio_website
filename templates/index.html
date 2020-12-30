@@ -1,0 +1,108 @@
+{% extends 'base.html'%}
+
+{% block content %}
+	{% block education %}
+	<div class="education">
+		<h1>
+			Education
+		</h1>
+		<div class="row">
+			<div class="col">
+				<img id="uvce_logo" src="{{url_for('static', filename='bu_logo.jpg')}}">
+				<h1>
+					UVCE
+				</h1>
+				<p class="edu-para m-2">
+					BTech in Information Science and Engineering,<br>
+					Dept. Of Computer Science and Engineering<br>
+					(2019-)
+				</p>
+			</div>
+
+			<div class="col">
+				<img src="{{url_for('static', filename='iit_madras.png')}}">
+				<h2>
+					IIT MADRAS
+				</h2>
+				<p class="edu-para">
+					BSc in DataScience and Programming,<br>
+					Online Degree Program, IIT Madras<br>
+					(2020-)
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="projects">
+		<h1>
+			My Projects
+		</h1>
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<h3>
+							Programmer's Diary
+						</h3>
+						<hr>
+						<p class="card-para">
+							A desktop tkinter application which acts as a notebook to record important bugs and problems for future reference.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<h3>
+							Portfolio Website
+						</h3>
+						<hr>
+						<p>
+							The website you are going through right now. Nothing fancy.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<h3>
+							Desktop Japanese Revision application
+						</h3>
+						<hr>
+						<p>
+							A PyQt5 desktop application which helps Japanese learners revise alpahbet, study Kanji and vocabulary
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card">
+					<div class="card-body">
+						<h3>
+							Flask Blog app
+						</h3>
+						<hr>
+						<p>
+							A personal blog app built using flask and sqlite3 to record my daily life. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% endblock education %}
+
+	{% block resume %}
+
+
+	{% block resume %}
+
+{% endblock content %}
