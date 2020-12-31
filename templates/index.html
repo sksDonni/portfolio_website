@@ -1,6 +1,23 @@
 {% extends 'base.html'%}
 
 {% block content %}
+
+	{% block intro %}
+	<div id="intro">
+		<div class="row">
+			<div class="col-12">
+				<p class="intro-para">
+					I am Engineering third semester student
+					pursuing Btech(hons) in Computer science from
+					UVCE, Bangalore
+					I love coding, fighter jets and good music...
+				</p> 
+			</div>
+		</div>
+	</div>
+
+
+	{% endblock intro%}
 	{% block education %}
 	<div id="edu">
 		<h1>
@@ -41,7 +58,8 @@
 			<div class="col-12 col-md-6"> 
 				<div class="card">
 					<div class="card-body">
-						<h3>
+						<h3 class="card-title">
+							<i class="fa fa-folder folder-logo" aria-hidden="true"></i>
 							Programmer's Diary
 						</h3>
 						<hr>
@@ -55,11 +73,12 @@
 			<div class="col-12 col-md-6">
 				<div class="card">
 					<div class="card-body">
-						<h3>
+						<h3 class="card-title">
+							<i class="fa fa-folder folder-logo" aria-hidden="true"></i>
 							Portfolio Website
 						</h3>
 						<hr>
-						<p>
+						<p class="card-para">
 							The website you are going through right now. Nothing fancy.
 						</p>
 					</div>
@@ -71,11 +90,12 @@
 			<div class="col-12 col-md-6">
 				<div class="card">
 					<div class="card-body">
-						<h3>
-							Desktop Japanese Revision application
+						<h3 class="card-title">
+							<i class="fa fa-folder folder-logo" aria-hidden="true"></i>
+							Japanese Revision application
 						</h3>
 						<hr>
-						<p>
+						<p class="card-para">
 							A PyQt5 desktop application which helps Japanese learners revise alpahbet, study Kanji and vocabulary
 						</p>
 					</div>
@@ -85,11 +105,12 @@
 			<div class="col-12 col-md-6">
 				<div class="card">
 					<div class="card-body">
-						<h3>
+						<h3 class="card-title">
+							<i class="fa fa-folder folder-logo" aria-hidden="true"></i>
 							Flask Blog app
 						</h3>
 						<hr>
-						<p>
+						<p class="card-para">
 							A personal blog app built using flask and sqlite3 to record my daily life. 
 						</p>
 					</div>
@@ -101,7 +122,9 @@
 	{% endblock education %}
 
 	{% block resume %}
-
+		<h1>
+			Resume
+		</h1>
 
 	{% endblock resume %}
 
