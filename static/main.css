@@ -12,6 +12,13 @@
 {
 	font-size: 24px;
 }
+
+.education
+{
+	border:2px solid black;
+	padding: 25px;
+}
+
 .edu-para
 {
 	font-size: 20px;
@@ -20,9 +27,8 @@
 
 .row
 {
-	border-bottom: 2px solid black;
 	margin-bottom: 10px;
-	padding-bottom: 10px;
+	padding: 10px;
 }
 
 img
