@@ -1,136 +1,23 @@
 {% extends 'base.html'%}
 
+
 {% block content %}
 
-	{% block intro %}
-	<div id="intro">
-		<div class="row">
-			<div class="col-12">
-				<p class="intro-para">
-					I am a third semester Engineering student, pursuing Btech(hons) in Computer science from
-					UVCE, Bangalore. I am also enrolled in the Bsc in data science program offered by IIT Madras. <br>
-					I love coding, fighter jets and good music...
-				</p> 
-			</div>
-		</div>
-	</div>
+	{% include 'intro.html' %}
+	
+	{% include 'education.html' %}
+	
+	{% include 'projects.html' %}
+
+	{% include 'resume.html' %}
+
+	{% block skills %}
+
+	{% endblock skills%}
 
 
-	{% endblock intro%}
-	{% block education %}
-	<div id="edu">
-		<h1>
-			Education
-		</h1>
-		<div class="row">
-			<div class="col education" id="uvce-edu">
-				<img id="uvce_logo" src="{{url_for('static', filename='bu_logo.jpg')}}">
-				<h1>
-					UVCE
-				</h1>
-				<p class="edu-para">
-					BTech in Information Science and Engineering,<br>
-					Dept. Of Computer Science and Engineering<br>
-					(2019-)
-				</p>
-			</div>
-
-			<div class="col education" id="iit-edu">
-				<img src="{{url_for('static', filename='iit_madras.png')}}">
-				<h2>
-					IIT MADRAS
-				</h2>
-				<p class="edu-para">
-					BSc in DataScience and Programming,<br>
-					Online Degree Program, IIT Madras<br>
-					(2020-)
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="projects">
-		<h1>
-			My Projects
-		</h1>
-		<div class="row">
-			<div class="col-12 col-md-6"> 
-				<div class="card">
-					<div class="card-body">
-						<h4 class="card-title">
-							<i class="fa fa-folder folder-logo" aria-hidden="true"></i>
-							Programmer's Diary
-						</h4>
-						<hr>
-						<p class="card-para">
-							A desktop tkinter application which acts as a notebook to record important bugs and problems for future reference.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-12 col-md-6">
-				<div class="card">
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="https://github.com"><i class="fa fa-folder folder-logo" aria-hidden="true"></i></a>
-							Portfolio Website
-						</h4>
-						<hr>
-						<p class="card-para">
-							The website you are going through right now. Nothing fancy.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-12 col-md-6">
-				<div class="card">
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="https://github.com/sksDonni/Tkinter_Projects/tree/master/japaneseRevision"><i class="fa fa-folder folder-logo" aria-hidden="true"></i></a>
-							Japanese Revision application
-						</h4>
-						<hr>
-						<p class="card-para">
-							A tkinter desktop application which helps Japanese learners revise alpahbet, study Kanji and vocabulary
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-12 col-md-6">
-				<div class="card">
-					<div class="card-body">
-						<h4 class="card-title">
-							<i class="fa fa-folder folder-logo" aria-hidden="true"></i>
-							Flask Blog app
-						</h4>
-						<hr>
-						<p class="card-para">
-							A personal blog app built using flask and sqlite3 to record my daily life. 
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	{% endblock education %}
-
-	{% block resume %}
-	<div class="resume">
-		<h1 >
-			Resume
-		</h1>
-		<div>
-			Check out my deatiled resume <a href="{{url_for('static', filename='resume.pdf')}}" download="resume">here</a>
-		</div>
-	</div>
-		
-
-	{% endblock resume %}
+	{% block contactme%}
+	
+	{% endblock contactme%}
 
 {% endblock content %}

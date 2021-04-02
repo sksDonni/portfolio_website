@@ -8,17 +8,28 @@
 {
 	font-size: 32px;
 }
-.intro-para
+
+.container-fluid
 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
 	font-size: 24px;
 }
 
-/*.education
+.education
 {
-	border:2px solid black;
 	padding: 25px;
-}*/
+}
 
+#edu
+{
+	/*background-color: #e6ccb2;*/
+}
+#github-projects
+{
+	/*background-color: #b08968;*/
+}
 .edu-para
 {
 	font-size: 20px;
@@ -27,6 +38,7 @@
 
 .row
 {
+
 	margin-bottom: 10px;
 	padding: 10px;
 }
@@ -59,6 +71,11 @@ hr
 .folder-logo
 {
 	float: left;
+}
+
+#contact-me
+{
+	color: blue;
 }
 
 @media only screen and (max-width: 567px)

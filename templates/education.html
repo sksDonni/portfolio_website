@@ -1,0 +1,37 @@
+{% block education %}
+
+<div class="container-fluid" id="edu">
+	<div class="container">
+		<h1>
+			Education
+		</h1>
+		<div class="row">
+			<div class="col education" id="uvce-edu">
+				<img id="uvce_logo" src="{{url_for('static', filename='bu_logo.jpg')}}">
+				<h1>
+					UVCE
+				</h1>
+				<p class="edu-para">
+					BTech in Information Science and Engineering,<br>
+					Dept. Of Computer Science and Engineering<br>
+					(2019-2023)<br>
+				</p>
+			</div>
+
+			<div class="col education" id="iit-edu">
+				<img src="{{url_for('static', filename='iit_madras.png')}}">
+				<h2>
+					IIT MADRAS
+				</h2>
+				<p class="edu-para">
+					BSc in DataScience and Programming,<br>
+					Online Degree Program, IIT Madras<br>
+					(2020-2023) <br>
+				</p>
+			</div>
+		</div>
+	</div>	
+</div>
+		
+
+{% endblock education %}
